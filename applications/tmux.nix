@@ -1,0 +1,26 @@
+{ pkgs, ... }:
+
+{ 
+
+  programs.tmux = {
+    enable = true;
+    extraConfig = ''
+      unbind C-b
+      set-option -g prefix C-x
+      bind-key C-x send-prefix
+
+      # split panes
+      bind a split-window -h
+      bind z split-window -v
+      unbind '"'
+      unbind %
+
+      # switch panes using Alt-arrow without prefix
+      bind -n M-Left select-pane -L
+      bind -n M-Right select-pane -R
+      bind -n M-Up select-pane -U
+      bind -n M-Down select-pane -D
+    '';
+  };
+
+}
