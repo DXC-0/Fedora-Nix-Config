@@ -54,9 +54,10 @@ sudo dnf install --setopt=install_weak_deps=False -y \
   xdg-desktop-portal-gnome \
   xdg-desktop-portal-wlr
 
-echo "📦 Ajoute du dépot flathub 📦"
+echo "📦 Ajoute des applications flatpak 📦"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak -y install flathub com.discordapp.Discord
 
 echo " Activation des services "
 sudo systemctl enable lightdm.service
