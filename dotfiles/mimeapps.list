@@ -1,0 +1,26 @@
+[Default Applications]
+# Vidéo
+video/mp4=vlc.desktop
+video/x-matroska=vlc.desktop
+video/x-msvideo=vlc.desktop
+video/webm=vlc.desktop
+
+# Audio
+audio/mpeg=vlc.desktop
+audio/x-wav=vlc.desktop
+audio/ogg=vlc.desktop
+
+# Navigateur web
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
+text/html=librewolf.desktop
+
+# Images
+image/jpeg=eog.desktop
+image/png=eog.desktop
+image/gif=eog.desktop
+image/webp=eog.desktop
+
+# Dossiers et fichiers
+inode/directory=nautilus.desktop
+application/pdf=librewolf.desktop
