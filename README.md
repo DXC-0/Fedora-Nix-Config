@@ -1,5 +1,3 @@
-> This repository is used to explain my choices in terms of Linux distribution, the reasons that made me get there, what the scripts do and how to deploy the system. You will find here my "pure" dotfiles which are usable everywhere (all classic Linux distributions, Ubuntu, Arch, Fedora ...) and installer + configuration files which require nix package manager.
-
 ### INSTALLATION METHOD
 
 This script installs the Windows Manager Niri, containerization tools, flatpak and Nvidia drivers. \
