@@ -10,6 +10,8 @@ I was told to switch to NixOS, it's a great adventure, I loved building the syst
 
 ### HOME MANAGER FOR DOTFILES
 
+Home-manager is kind of the craziest thing I've seen in the Linux world for a long time. It's much more powerful to have a classic system with Homemanager. I can declare the configurations of my Nix applications, apply them, rollback if necessary with its derivation system. With this, you always have a consistent "user level" system. The highlight of the show is that it even allows you to manage your DNF application dotfiles, which makes your entire configuration rebuildable in a few seconds.
+
 ### NIRI WINDOWS MANAGER 
 
 ### FLATPAK AND PODMAN
