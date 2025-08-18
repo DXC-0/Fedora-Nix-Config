@@ -40,7 +40,7 @@
     ./applications/niri.nix
     ./applications/tmux.nix
     ./applications/wofi.nix
-    ./application/signal.nix
+    ./applications/signal.nix
   ];
 
 }
