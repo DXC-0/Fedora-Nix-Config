@@ -6,6 +6,8 @@ I spent years on Archlinux, I loved the experience, it's a distribution that I l
 
 ### NIX PACKAGE MANAGER
 
+I was told to switch to NixOS, it's a great adventure, I loved building the system, but I had difficulties doing things that are not provided in the Nix framework. It's difficult, for example if you want to build from source, you have a problem, the OS is also not totally imutable as I thought, it did not convince me. I am a big user of Flatpak and OCI containers (podman/docker), I like things to be isolated from the system. Nix package manager allows me to do this, it's such a powerful tool you can't even imagine. I can install as many applications and derivations as I want, all dependencies are managed and isolated from my host system, it's incredible.
+
 ### HOME MANAGER FOR DOTFILES
 
 ### NIRI WINDOWS MANAGER 
