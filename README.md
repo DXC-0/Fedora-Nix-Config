@@ -1,3 +1,5 @@
+[![Fedora-Xnix.png](https://i.postimg.cc/Dw8k34st/Fedora-Xnix.png)](https://postimg.cc/XrSDwJs8)
+
 ### INSTALLATION METHOD
 
 This script installs the Windows Manager Niri, containerization tools, flatpak and Nvidia drivers. \
