@@ -33,6 +33,14 @@ Rebuild with the new configuration :
 
 ```nix-shell -p home-manager --run "home-manager switch"```
 
+To install flatpak application : 
+
+```flatpak install "application"```
+
+To update flatpak packages : 
+
+```sudo flatpak update && sudo flatpak upgrade && sudo flatpak remove --unused```
+
 
 ### WHY FEDORA ? 
 
