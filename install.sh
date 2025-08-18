@@ -57,7 +57,9 @@ sudo dnf install --setopt=install_weak_deps=False -y \
 echo "📦 Ajoute des applications flatpak 📦"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak -y install flathub com.discordapp.Discord
+flatpak -y install flathub \
+com.discordapp.Discord \
+org.gnome.Boxes \
 
 echo " Activation des services "
 sudo systemctl enable lightdm.service
