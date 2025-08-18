@@ -39,7 +39,11 @@ To update flatpak packages :
 
 ```sudo flatpak update && sudo flatpak upgrade && sudo flatpak remove --unused```
 
+<br/>
+
 ---
+
+<br/>
 
 ### WHY FEDORA ? 
 
