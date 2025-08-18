@@ -60,6 +60,9 @@ Home-manager is kind of the craziest thing I've seen in the Linux world for a lo
 I'm sticking with Flatpak (it's a universal containerized application distribution model), which I use for proprietary applications that also need to be updated as soon as they're available. Publishers publish, so it makes things faster.
 Besides that I use podman and distrobox, it's a powerful combo that also allows me to have the quantity of software available on Archlinux and the AUR.
 
+<br/>
+
+
 [![Fedora-Xnix.png](https://i.postimg.cc/Dw8k34st/Fedora-Xnix.png)](https://postimg.cc/XrSDwJs8)
 
 
