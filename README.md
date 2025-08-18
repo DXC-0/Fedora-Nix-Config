@@ -42,9 +42,9 @@ To Update nix channels :
 
 ```nix-channel --update```
 
-To add a new applications to configuration :
+To add a new applications to configuration, edit this file :
 
-Edit ``` .config/home-manager/home.nix ```
+``` .config/home-manager/home.nix ```
 
 Rebuild with the new configuration : 
 
