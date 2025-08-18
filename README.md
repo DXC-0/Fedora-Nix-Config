@@ -1,6 +1,6 @@
 ### INSTALLATION METHOD
 
-This script installs the Windows Manager Niri, containerization tools, flatpak and Nvidia drivers. \
+This script installs the Windows Manager Niri, my applications dotfiles, containerization tools, flatpak and Nvidia drivers. \
 The Nix part will reproduce the user environment and install applications.
 
 Install a Fedora Minimal and install git 
