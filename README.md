@@ -36,7 +36,7 @@ sudo bash install.sh
 
 To update the system (Fedora) : 
 
-```sudo dnf update && sudo dnf upgrade
+``` sudo dnf update && sudo dnf upgrade ```
 
 To Update nix channels :
 
