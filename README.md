@@ -4,43 +4,11 @@
 
 I spent years on Archlinux, I loved the experience, it's a distribution that I love and that leaves you in control, but I got tired of its rolling release model. The packages are too close to the upstream for my taste and there is no dependency isolation. By that I mean that it's a traditional system, very nice, but things tend to break too often for me. I spent some time on Bluefin, the fork of Silverblue, to end up on Fedora Minimal. I want to have Secureboot and SELinux, the reliability of Fedora packages - many big open source names are from RedHat - a world-renowned company and backed by IBM behind it gives me total confidence in the reliability of the distribution.
 
-Fedora packages (windows manager) :
-
-- swaybg 
-- swayidle 
-- wl-clipboard 
-- nautilus 
-- slurp 
-- xwayland-satellite 
-- niri 
-- wofi 
-- dunst 
-- lightdm-gtk 
-- xdg-desktop-portal-gnome 
-- xdg-desktop-portal-wlr
-
-  
+Exemple of manager dnf packages : niri, dunst, wofi ...
 
 ### NIX PACKAGE MANAGER
 
 I was told to switch to NixOS, it's a great adventure, I loved building the system, but I had difficulties doing things that are not provided in the Nix framework. It's difficult, for example if you want to build from source, you have a problem, the OS is also not totally imutable as I thought, it did not convince me. I am a big user of Flatpak and OCI containers (podman/docker), I like things to be isolated from the system. Nix package manager allows me to do this, it's such a powerful tool you can't even imagine. I can install as many applications and derivations as I want, all dependencies are managed and isolated from my host system, it's incredible.
-
-- vscode
-- pavucontrol
-- blueberry
-- pinta
-- podman-desktop
-- gnome-boxes
-- eog
-- gnome-text-editor
-- signal-desktop
-- vlc
-- freetube
-- fastfetch
-- git
-- firefox
-- chromium
-- pavucontrol
 
 ### HOME MANAGER FOR DOTFILES
 
