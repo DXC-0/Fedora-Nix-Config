@@ -25,9 +25,11 @@ Install a Fedora Minimal and install git
 
 Clone the repository and run the install.sh script
 
-``` git clone https://github.com/DXC-0/Fedora-Nix-Config/
+```
+git clone https://github.com/DXC-0/Fedora-Nix-Config/
 cd Fedora-Nix-Config
-sudo bash install.sh```
+sudo bash install.sh
+```
 
 This configuration 
 
