@@ -19,6 +19,9 @@ Besides that I use podman and distrobox, it's a powerful combo that also allows 
 
 ### INSTALLATION METHOD
 
+This script installs the Windows Manager Niri, containerization tools, flatpak and Nvidia drivers. 
+The Nix part will reproduce the user environment and install applications.
+
 Install a Fedora Minimal and install git 
 
 ```sudo dnf install git```
@@ -31,16 +34,19 @@ cd Fedora-Nix-Config
 sudo bash install.sh
 ```
 
-This configuration 
+To update the system (Fedora) : 
 
-Switch configuration :
+```sudo dnf update && sudo dnf upgrade
 
-
-```nix-shell -p home-manager --run "home-manager switch"```
-
-
-Update nix channels :
-
+To Update nix channels :
 
 ```nix-channel --update```
+
+To add a new applications to configuration :
+
+Edit ``` .config/home-manager/home.nix ```
+
+Rebuild with the new configuration : 
+
+```nix-shell -p home-manager --run "home-manager switch"```
 
