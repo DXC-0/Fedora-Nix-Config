@@ -54,7 +54,7 @@ sudo dnf install --setopt=install_weak_deps=False -y \
   xdg-desktop-portal-gnome \
   xdg-desktop-portal-wlr
 
-echo "📦 Ajoute des applications flatpak 📦"
+echo "📦 Installation des applications flatpak 📦"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak -y install flathub \
