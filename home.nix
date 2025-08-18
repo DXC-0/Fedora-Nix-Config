@@ -19,7 +19,6 @@
     blueberry
     pinta
     podman-desktop
-    gnome-boxes
     eog
     gnome-text-editor
     signal-desktop
