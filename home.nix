@@ -14,7 +14,6 @@
 
 
   home.packages = with pkgs; [
-    vscodium
     pavucontrol
     blueberry
     pinta
