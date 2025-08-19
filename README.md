@@ -41,6 +41,8 @@ To update flatpak packages :
 
 <br/>
 
+[![Image-coll-e.png](https://i.postimg.cc/gjy5BFcn/Image-coll-e.png)](https://postimg.cc/QKt0HzT3)
+
 ---
 
 ### WHY FEDORA ? 
