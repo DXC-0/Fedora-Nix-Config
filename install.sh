@@ -85,12 +85,13 @@ sudo -u "$NON_ROOT_USER" bash -c "
 "
 
 echo "Configuration Home Manager"
-sudo -u "$NON_ROOT_USER" bash -c "
-  cp ./home.nix \"$USER_HOME/.config/home-manager/home.nix\"
-  cp -r ./applications/ \"$USER_HOME/.config/home-manager/applications/\"
-  . \"$USER_HOME/.nix-profile/etc/profile.d/nix.sh\"
-  home-manager switch
-"
+sudo -u "$NON_ROOT_USER" bash -c "cp ./home.nix '$USER_HOME/.config/home-manager/home.nix'; \
+cp -r ./applications/ '$USER_HOME/.config/home-manager/applications/'; \
+mkdir -p '$USER_HOME/.config/nixpkgs'; \
+echo '{ allowUnfree = true; }' > '$USER_HOME/.config/nixpkgs/config.nix'; \
+source '$USER_HOME/.nix-profile/etc/profile.d/nix.sh'; \
+home-manager switch"
+
 
 echo "Autologin LightDM"
 sudo sed -i 's/^#\?\s*autologin-user=.*/autologin-user=alerion/' /etc/lightdm/lightdm.conf
