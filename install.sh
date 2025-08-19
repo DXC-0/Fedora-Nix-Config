@@ -88,7 +88,6 @@ echo "Configuration Home Manager"
 sudo -u "$NON_ROOT_USER" bash -c "
   cp ./home.nix \"$USER_HOME/.config/home-manager/home.nix\"
   cp -r ./applications/ \"$USER_HOME/.config/home-manager/applications/\"
-  cp -r ./nixpkgs/ \"$USER_HOME/.config/nixpkgs/\"
   . \"$USER_HOME/.nix-profile/etc/profile.d/nix.sh\"
   home-manager switch
 "
