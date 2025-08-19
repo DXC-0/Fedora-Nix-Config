@@ -14,6 +14,7 @@
 
 
   home.packages = with pkgs; [
+    vscode
     pavucontrol
     blueberry
     pinta
