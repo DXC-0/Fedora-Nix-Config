@@ -40,6 +40,7 @@
     ./applications/tmux.nix
     ./applications/wofi.nix
     ./applications/signal.nix
+    ./applications/pipewire.nix
   ];
 
 }
