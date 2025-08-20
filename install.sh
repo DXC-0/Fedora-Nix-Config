@@ -90,7 +90,9 @@ cp -r ./applications/ '$USER_HOME/.config/home-manager/applications/'; \
 mkdir -p '$USER_HOME/.config/nixpkgs'; \
 echo '{ allowUnfree = true; }' > '$USER_HOME/.config/nixpkgs/config.nix'; \
 source '$USER_HOME/.nix-profile/etc/profile.d/nix.sh'; \
+source '$USER_HOME/.nix-profile/etc/profile.d/hm-session-vars.sh'; \
 home-manager switch"
+
 
 
 echo "Autologin LightDM"
