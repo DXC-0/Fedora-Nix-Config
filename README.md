@@ -29,6 +29,10 @@ To add new applications to configuration, edit this file :
 
 Rebuild with the new configuration : 
 
+```home-manager switch```
+
+or alternatively : 
+
 ```nix-shell -p home-manager --run "home-manager switch"```
 
 To install flatpak application : 
