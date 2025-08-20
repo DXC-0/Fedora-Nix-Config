@@ -59,6 +59,7 @@ layout {
     background-color "transparent"
     always-center-single-column
     center-focused-column "never"
+    default-column-display "normal"
 
     preset-column-widths {
         proportion 0.33333
@@ -69,6 +70,7 @@ layout {
     // New windows default width
 
     default-column-width { proportion 0.5; }
+
 
     // Focus Ring
 
@@ -154,14 +156,14 @@ binds {
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "ddcutil" "--bus=4" "setvcp" "10" "+" "10"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "ddcutil" "--bus=4" "setvcp" "10" "-" "10"; }
-    XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioMute        allow-when-locked=true { spawn "ddcutil" "--bus=4" "setvcp" "10" "0"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
-    Mod+O repeat=false { toggle-overview; }
+    Mod+Tab repeat=false { toggle-overview; }
 
     Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
+   // Mod+Down  { focus-window-down; }
+   // Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }
@@ -200,8 +202,8 @@ binds {
     Mod+Shift+Ctrl+K     { move-column-to-monitor-up; }
     Mod+Shift+Ctrl+L     { move-column-to-monitor-right; }
 
-    Mod+Page_Down      { focus-workspace-down; }
-    Mod+Page_Up        { focus-workspace-up; }
+    Mod+Down      { focus-workspace-down; }
+    Mod+Up        { focus-workspace-up; }
     Mod+U              { focus-workspace-down; }
     Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
@@ -264,11 +266,11 @@ binds {
 
     Mod+Ctrl+C { center-visible-columns; }
 
-    Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
+    Mod+Alt+Left  { set-column-width "-10%"; }
+    Mod+Alt+Right { set-column-width "+10%"; }
 
-    Mod+Shift+Minus { set-window-height "-10%"; }
-    Mod+Shift+Equal { set-window-height "+10%"; }
+    Mod+Alt+Up { set-window-height "-10%"; }
+    Mod+Alt+Down { set-window-height "+10%"; }
 
     Mod+V       { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
