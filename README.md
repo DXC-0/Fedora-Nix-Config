@@ -55,7 +55,7 @@ I spent years on Archlinux, I loved the experience, it's a distribution that I l
 
 ### NIX PACKAGE MANAGER
 
-This is my best discovery, I like my system to be clean and I must have up-to-date software. I use Nix on top of Fedora, all applications come from the unstable channel. Dependencies are isolated, I can rollback in a few moments, it is the most powerful tool I have seen on Linux. I don't want to manage everything with Nix, Fedora manages the drivers, "core" packages and the Windows manager, elements that must not move.
+I like my system to be clean and I must have up-to-date software. I use Nix on top of Fedora, all applications come from the unstable channel. Dependencies are isolated, I can rollback in a few moments, it is the most powerful tool I have seen on Linux. I don't want to manage everything with Nix, Fedora manages the drivers, "core" packages and the Windows manager, elements that must not move.
 
 ### HOME MANAGER FOR DOTFILES
 
