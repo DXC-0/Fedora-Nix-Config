@@ -51,7 +51,7 @@ To update flatpak packages :
 
 ### WHY FEDORA ? 
 
-I spent years on Archlinux, a good experience, it's a distribution that i love and that leaves you in control, but I got tired of its rolling release model. The packages are too close to the upstream for my taste and there is no dependency isolation. By that I mean that it's a traditional system, very nice, but things tend to break too often for me. I spent some time on Bluefin, the fork of Silverblue, to end up on Fedora Minimal. I want to have Secureboot and SELinux, the reliability of Fedora packages - many big open source names are from RedHat - a world-renowned company and backed by IBM behind it gives me total confidence in the reliability of the distribution.
+I spent years with Archlinux, which was a good experience. It's a distribution I love and that gives control over the system, but I grew tired of its rolling release model. The packages are too close to upstream for my liking, and there's no dependency isolation. It's a traditional system, very good, but it tends to crash too often for my liking. With Fedora, I have Secureboot and SELinux. The reliability of the packages—many big open source names come from RedHat—a world-renowned company backed by IBM—gives me complete confidence in the reliability of the distribution.
 
 ### NIX PACKAGE MANAGER
 
@@ -59,7 +59,7 @@ I like my system to be clean and I must have up-to-date software. I use Nix on t
 
 ### HOME MANAGER FOR DOTFILES
 
-Home-manager is kind of the craziest thing I've seen in the Linux world for a long time. It's much more powerful to have a classic system with Homemanager. I can declare the configurations of my Nix applications, apply them, rollback if necessary with its derivation system. With this, you always have a consistent "user level" system. The highlight of the show is that it even allows you to manage your DNF application dotfiles, which makes your entire configuration rebuildable in a few seconds.
+With Home Manager, I can declare the configurations of my Nix applications, apply them, and roll back if necessary thanks to its derivation system. This way, you always have a consistent system at the user level. The application's strength is that it even allows you to manage the dotfiles of your DNF applications, making your entire configuration rebuildable in seconds.
 
 ### FLATPAK AND PODMAN
 
