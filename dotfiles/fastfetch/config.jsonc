@@ -1,0 +1,50 @@
+{
+  "display": {
+    "color": "blue",
+    "separator": "  ",
+    "size": {
+      "binaryPrefix": "si"
+    }
+  },
+  "logo": {
+    "height": 15,
+    "padding": {
+      "right": 1
+    },
+    "source": "/home/alerion/.config/fastfetch/fedonixchan.jpg",
+    "width": 25
+  },
+  "modules": [
+    {
+      "format": "{1}-{3}-{11}",
+      "key": "Date",
+      "type": "datetime"
+    },
+    {
+      "format": "{14}:{17}:{20}",
+      "key": "Time",
+      "type": "datetime"
+    },
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "terminal",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "battery",
+    "resolution",
+    "de",
+    "wm",
+    "theme",
+    "icons",
+    "font",
+    "locale",
+    "player",
+    "media"
+  ]
+}
