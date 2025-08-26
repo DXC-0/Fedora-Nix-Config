@@ -2,7 +2,9 @@
 
 {
 
-home.file.".config/waybar/config.jsonc".text = ''
+home.file.".config/waybar/config.jsonc" = {
+    force = true; 
+    text = ''
     // -*- mode: jsonc -*-
     {
       "layer": "top",
@@ -166,12 +168,13 @@ home.file.".config/waybar/config.jsonc".text = ''
         "system": true,
         "user": false
       }
-      force = true; 
     }
   '';
+};
 
-
-  home.file.".config/waybar/style.css".text = ''
+  home.file.".config/waybar/style.css" = {
+    force = true; 
+    text = ''
     * {
         font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
         font-size: 13px;
@@ -515,5 +518,5 @@ home.file.".config/waybar/config.jsonc".text = ''
         margin-right: 20px;
     }
   '';
-  force = true;
+  };
 }
