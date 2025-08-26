@@ -49,6 +49,7 @@ sudo dnf install --setopt=install_weak_deps=False -y \
   xwayland-satellite \
   niri \
   wofi \
+  waybar \
   dunst \
   lightdm-gtk \
   xdg-desktop-portal-gnome \
