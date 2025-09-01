@@ -21,11 +21,12 @@ home.file.".config/waybar/config.jsonc" = {
         "cpu",
         "memory",
         "temperature",
-        "systemd-failed-units"
+        "systemd-failed-units",
+        "custom/waypaper"
       ],
       "modules-right": [
-        "pulseaudio",
         "bluetooth",
+        "pulseaudio",
         "custom/power"
       ],
 
@@ -47,6 +48,12 @@ home.file.".config/waybar/config.jsonc" = {
         "format": "    ",
         "tooltip": false,
         "on-click": "exec alacritty -e sudo dnf update && sudo dnf upgrade"
+      },
+
+      "custom/waypaper": {
+        "format": "📷",
+        "tooltip": false,
+        "on-click": "env GTK_THEME=Adwaita-dark waypaper"
       },
 
       "clock": {
@@ -237,6 +244,7 @@ home.file.".config/waybar/config.jsonc" = {
         box-shadow: inset 0 -3px #ffffff;
     }
 
+    #custom-waypaper,
     #clock,
     #battery,
     #cpu,
@@ -348,6 +356,7 @@ home.file.".config/waybar/config.jsonc" = {
 
     #pulseaudio, #pulseaudio.muted {
         font-size: 17px;
+        margin-right: 30px;
     }
 
     #wireplumber {
@@ -492,6 +501,11 @@ home.file.".config/waybar/config.jsonc" = {
         margin-left: -5px;
     }
 
+    #custom-waypaper {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
     #window {
         font-size: 5px;
         margin-left: 40px;
@@ -505,7 +519,7 @@ home.file.".config/waybar/config.jsonc" = {
 
     #bluetooth {
         font-size: 18px;
-        margin-right: 20px;
+        margin-right: 30px;
     }
 
     #systemd-failed-units {
