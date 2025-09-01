@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+
   home.file.".config/niri/scripts/audio.sh" = {
     text = ''
       #!/bin/bash
@@ -23,4 +24,5 @@
     '';
     force = true;
   };
+  
 }
