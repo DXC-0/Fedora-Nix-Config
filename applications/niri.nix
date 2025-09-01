@@ -29,7 +29,7 @@ input {
 }
 
 environment {
-	DISPLAY ":0"
+    DISPLAY ":0"
 }
 
 // Applications Startup
@@ -38,7 +38,8 @@ spawn-at-startup "xwayland-satellite"
 spawn-at-startup "swayidle"
 spawn-at-startup "dunst"
 spawn-at-startup "waybar"
-spawn-at-startup "swaybg" "--image" "/home/alerion/.config/niri/wall.png"
+spawn-at-startup "bash" "/home/alerion/.config/niri/scripts/audio.sh"
+spawn-at-startup "swaybg" "--image" "/home/alerion/.config/niri/wall.png" "--mode" "fill"
 spawn-at-startup "dconf" "write" "/org/gnome/desktop/interface/color-scheme" "'prefer-dark'"
 spawn-at-startup "dconf" "write" "/org/gnome/desktop/interface/icon-theme" "'Flatery-Indigo-Dark'"
 
@@ -175,8 +176,8 @@ binds {
     Mod+L     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
-    Mod+Ctrl+Down  { move-window-down; }
-    Mod+Ctrl+Up    { move-window-up; }
+   // Mod+Ctrl+Down  { move-window-down; }
+   // Mod+Ctrl+Up    { move-window-up; }
     Mod+Ctrl+Right { move-column-right; }
     Mod+Ctrl+H     { move-column-left; }
     Mod+Ctrl+J     { move-window-down; }
@@ -209,8 +210,8 @@ binds {
     Mod+Down      { focus-workspace-down; }
     Mod+Up        { focus-workspace-up; }
     Mod+U              { focus-workspace-down; }
-    Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
-    Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
+    Mod+Ctrl+Down { move-column-to-workspace-down; }
+    Mod+Ctrl+Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
     Mod+Ctrl+I         { move-column-to-workspace-up; }
 
@@ -294,3 +295,5 @@ binds {
   '';
 
 }
+
+
