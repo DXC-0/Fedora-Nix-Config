@@ -44,7 +44,7 @@
     ./applications/wofi.nix
     ./applications/btop.nix
     ./applications/signal.nix
-    ./applications/pipewire.nix
+    ./applications/audio.nix
     ./applications/waybar.nix
   ];
 
