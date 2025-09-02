@@ -27,6 +27,9 @@
     vlc
     freetube
     github-desktop
+    gnome-calculator
+    waypaper
+    boxbuddy
   ];
 
 
@@ -44,8 +47,8 @@
     ./applications/wofi.nix
     ./applications/btop.nix
     ./applications/signal.nix
-    ./applications/audio.nix
     ./applications/waybar.nix
+    ./applications/audio.nix
   ];
 
 }
